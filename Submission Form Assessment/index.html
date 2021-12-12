@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <label for="nameInput">Name:</label>
+      </div>
+      <div>
+        <input
+          id="nameInput"
+          type="text"
+          name="userName"
+          autofocus="on"
+          required
+        />
+      </div>
+      <div>
+        <label for="emailInput">Emai:</label>
+      </div>
+      <div>
+        <input id="emailInput" type="text" name="emailName" required />
+      </div>
+
+      <div>
+        <label for="messageInput">Your message:</label>
+      </div>
+
+      <div>
+        <textarea
+          id="messageInput"
+          name="userMessage"
+          maxlength="1000"
+          required
+        ></textarea>
+      </div>
+
+      <div>
+        <h2>Favorite color</h2>
+        <div>
+          <input id="blue" name="userFavoriteColor" type="radio" value="blue" />
+          <label for="blue">Blue</label>
+        </div>
+        <div>
+          <input id="red" name="userFavoriteColor" type="radio" value="red" />
+          <label for="red">Red</label>
+        </div>
+        <div>
+          <input
+            id="white"
+            name="userFavoriteColor"
+            type="radio"
+            value="white"
+          />
+          <label for="white">White</label>
+        </div>
+        <div>
+          <input
+            id="purple"
+            name="userFavoriteColor"
+            type="radio"
+            value="purple"
+          />
+          <label for="purple">Purple</label>
+        </div>
+      </div>
+      <br />
+      <div>
+        <label for="phoneNumber">Phone #:</label>
+        <input
+          id="phoneNumber"
+          name="phone"
+          type="text"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          placeholder="xxx-xxx-xxxx"
+        />
+      </div>
+      <br />
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
